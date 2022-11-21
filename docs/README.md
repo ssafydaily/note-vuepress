@@ -2,6 +2,10 @@
 
 
 
-### github actions 테스트
+## github actions 테스트
 
-### sdfasfsdf
+## Vuepress 설정
+
+## Vuex 사용법
+
+## router 사용하기
