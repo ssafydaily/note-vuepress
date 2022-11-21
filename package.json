@@ -1,0 +1,15 @@
+{
+  "name": "y",
+  "version": "y",
+  "description": "Start Vuepress",
+  "main": "index.js",
+  "author": "jongyun <jongyun.jung@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.53"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
