@@ -1,6 +1,8 @@
 import { searchPlugin } from '@vuepress/plugin-search'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { defaultTheme } from '@vuepress/theme-default'
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+import { iconifyPlugin } from 'vuepress-plugin-iconify'
 
 module.exports = {
   base: '/note-vuepress',
@@ -12,12 +14,19 @@ module.exports = {
     searchMaxSuggestions: 10,
   },
   plugins: [
+    iconifyPlugin(),
+    mdEnhancePlugin({
+      tabs: true,
+      codetabs: true,
+      // Enable Tex Support using mathjax
+      mathjax: true,
+    }),
     searchPlugin({
       locales: {
         '/': {
           placeholder: 'Search',
         },
-      },
+      },      
     }),
   ],
   theme: defaultTheme({
@@ -55,8 +64,13 @@ module.exports = {
             text: 'Search',
             link: '/config/search.md',
           },
+          {
+            text: 'Plugins',
+            link: '/config/plugins.md',
+          }
         ],
       },
     ],
   }),
+  
 }

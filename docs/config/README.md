@@ -1,3 +1,12 @@
+---
+next: 
+  text: default theme
+  link: /config/default_theme.md
+
+icon: code
+---
+---
+
 # Config
 
 ## Site Config
